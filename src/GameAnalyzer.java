@@ -108,6 +108,8 @@ public class GameAnalyzer {
      * calculateScores function works like the following
      * 1- parse through both teams list
      * 2- add each pieces' point to the according team's score
+     * 3- print each pieces location and point
+     * 4- print each teams total score
      * */
     public void calculateScores() {
         for (ChessPiece piece : blackPieces) {
@@ -120,7 +122,7 @@ public class GameAnalyzer {
                System.out.println(piece.getPieceColour()+" "+piece.getPieceType()+" "+piece.getPiecePoint()+" X: "+piece.getLocationX()+" Y: "+piece.getLocationY());
 
         }
-        System.out.println("WHITE SCORE:\t" + whiteScore);
+        System.out.println("\nWHITE SCORE:\t" + whiteScore);
     }
 
     public void analyze() {
